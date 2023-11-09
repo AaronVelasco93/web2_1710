@@ -3,7 +3,7 @@ session_start();
 include "conexion.php";
 $usuario = $_POST['nombre_usuario'];
 $password = $_POST['password'];
-$q = "SELECT COUNT(*) as contar from usuarios where nombre_usuario= '$usuario' and password = '$password'";
+$q = "SELECT COUNT(*) AS contar FROM usuarios WHERE nombre_usuario= '$usuario' AND password = '$password'";
 $consulta = mysqli_query($conexion,$q);
 
 $array = mysqli_fetch_array($consulta);

@@ -6,7 +6,6 @@ session_start();
 <head>
  <title>Registrar Usuario</title>
  <meta charset = "utf-8">
-   
 </head>
 
 
@@ -30,19 +29,17 @@ session_start();
  <header>
  <h2 style="text-align:center">Registro </h2>
 </header>
-<div class="row" style="margin-top:50px">
-<div class="col s6 offset-s3">
+
 
 
 
 <form action="submit_registro.php" method="post">
 
  <hr />
-
  <!--Nombre-->
  <div class="form-group">
  <label for="nombre">Nombre Completo:</label><br>
- <input type="text" name="nombre" maxlength="255"  required>
+ <input type="text" name="usuario" maxlength="255"  required>
  <br/><br/>
  </div>
  <!-- Direcion -->
@@ -54,7 +51,7 @@ session_start();
 <!-- Telefono -->
 <div class="form-group">
 <label for="telefono">Telefono:</label><br>
-<input type="text" onkeypress="return valida(event) "name="telefono" maxlength="15" required>
+<input type="text" onkeypress="return valida(event)" name="telefono" maxlength="15" required>
 <br/><br/>
 </div>
 <!-- Email -->
@@ -83,19 +80,8 @@ session_start();
 </select>     
 
  </form>
- </div>
- </div>
- <!--Script de nav pasarlo a un php-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="assets/js/materialize.js"></script>
-<script type="text/javascript">$(".brand-logo").sideNav();</script> 
  
 
-<hr /><br />
-
-<footer>
- &copy; <a href="http://www.aragon.unam.mx/aragon/index.html">www.aragon.unam.mx</a>
-</footer>
 
  </body>
 </html>
